@@ -1,3 +1,18 @@
+body{
+    background-color: darkgrey;
+    text-aligin: center;
+}
+
 .field{
-  display: flex;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background-color: grey;
+    opacity: 0.8;
+    width: 30vw;
+    height: 20vh;
+    margin: 1.5vw;
+    font-size: 30vw;
 }
