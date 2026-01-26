@@ -90,6 +90,9 @@ function load(){
   }
 
   function clears(){
-    window.localStorage.clear();
+    result = window.confirm("データを削除しますか？");
+    if(result){
+      window.localStorage.clear();
+    }
   }
 }
