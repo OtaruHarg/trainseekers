@@ -24,5 +24,16 @@ h2{
     margin: 1.5vw;
     font-size: 30vw;
     text-aligin: center;
-    border: 50%;
+    border-radius: 50%;
+}
+
+.part{
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    width: 30vw;
+    height: 20vh;
+    margin: 1.5vw;
+    font-size: 30vw;
+    text-aligin: center;
+    border-radius: 50%;
 }
