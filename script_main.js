@@ -29,6 +29,7 @@ function N(x){
     result = window.confirm(nankai_shurui[x] + "を発見しましたか？");
     if(result){
       nankai[x] = "check";
+      save();
     }else{
       alert("キャンセルしました");
     }
