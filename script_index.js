@@ -34,11 +34,11 @@ function passcheck(){
 }
 
 function press_S(){
-    document.querySelector("#moji").textContent = "パスワード認証";
-    document.querySelector("#passes").textContent = "SUCCES";
     true_pass = true_pass + 1;
     //window.location.href = "main.html";
     if(true_pass > 5){
+        document.querySelector("#moji").textContent = "パスワード認証";
+        document.querySelector("#passes").textContent = "SUCCES";
         window.location.href = "main.html";
     }
 }
