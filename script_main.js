@@ -20,4 +20,75 @@ function N(x){
       alert("キャンセルしました");
     }
   }
+  save();
+}
+
+function save(){
+  y = 0;
+  while(z = 0){
+    y = y + 1;
+    key = "kintetsu" + y;
+    val = kintetsu[y];
+    if(y = 27){
+      z = 1;
+      y = 0;
+    }
+  }
+  while(z = 1){
+    y = y + 1;
+    key = "kintetsu" + y;
+    val = kintetsu[y];
+    if(y = 27){
+      z = 2;
+      y = 0;
+    }
+  }
+  while(z = 2){
+    y = y + 1;
+    key = "kintetsu" + y;
+    val = kintetsu[y];
+    if(y = 27){
+      z = 3;
+      y = 0;
+    }
+  }
+  while(z = 3){
+    y = y + 1;
+    key = "kintetsu" + y;
+    val = kintetsu[y];
+    if(y = 27){
+      z = 4;
+      y = 0;
+    }
+  }
+  while(z = 4){
+    y = y + 1;
+    key = "kintetsu" + y;
+    val = kintetsu[y];
+    if(y = 27){
+      z = 5;
+      y = 0;
+    }
+  }
+  while(z = 5){
+    y = y + 1;
+    key = "kintetsu" + y;
+    val = kintetsu[y];
+    if(y = 27){
+      z = 6;
+      y = 0;
+    }
+  }
+  while(z = 6){
+    y = y + 1;
+    key = "kintetsu" + y;
+    val = kintetsu[y];
+    if(y = 27){
+      z = 7;
+      y = 0;
+    }
+  }
+}
+
+function load(){
 }
