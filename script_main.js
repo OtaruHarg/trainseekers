@@ -36,8 +36,8 @@ function save(){
   }
   while(z = 1){
     y = y + 1;
-    key = "kintetsu" + y;
-    val = kintetsu[y];
+    key = "meitetsu" + y;
+    val = meitetsu[y];
     if(y = 27){
       z = 2;
       y = 0;
@@ -45,8 +45,8 @@ function save(){
   }
   while(z = 2){
     y = y + 1;
-    key = "kintetsu" + y;
-    val = kintetsu[y];
+    key = "nankai" + y;
+    val = nankai[y];
     if(y = 27){
       z = 3;
       y = 0;
@@ -54,8 +54,8 @@ function save(){
   }
   while(z = 3){
     y = y + 1;
-    key = "kintetsu" + y;
-    val = kintetsu[y];
+    key = "kintetsu_shurui" + y;
+    val = kintetsu_shurui[y];
     if(y = 27){
       z = 4;
       y = 0;
@@ -63,8 +63,8 @@ function save(){
   }
   while(z = 4){
     y = y + 1;
-    key = "kintetsu" + y;
-    val = kintetsu[y];
+    key = "meitetsu_shurui" + y;
+    val = meitetsu_shurui[y];
     if(y = 27){
       z = 5;
       y = 0;
@@ -72,19 +72,10 @@ function save(){
   }
   while(z = 5){
     y = y + 1;
-    key = "kintetsu" + y;
-    val = kintetsu[y];
+    key = "nankai_shurui" + y;
+    val = nankai_shurui[y];
     if(y = 27){
       z = 6;
-      y = 0;
-    }
-  }
-  while(z = 6){
-    y = y + 1;
-    key = "kintetsu" + y;
-    val = kintetsu[y];
-    if(y = 27){
-      z = 7;
       y = 0;
     }
   }
