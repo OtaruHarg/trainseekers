@@ -65,6 +65,9 @@ function load(){
     y = y + 1;
     key = "kintetsu" + y;
     kintetsu[y] = window.localStorage.getItem(key);
+    if(!kintetsu[y]){
+      kintetsu[y] = "yet";
+    }
     if(y = 27){
       z = 1;
       y = 0;
@@ -74,6 +77,9 @@ function load(){
     y = y + 1;
     key = "meitetsu" + y;
     meitetsu[y] = window.localStorage.getItem(key);
+    if(!meitetsu[y]){
+      meitetsu[y] = "yet";
+    }
     if(y = 27){
       z = 2;
       y = 0;
@@ -83,6 +89,9 @@ function load(){
     y = y + 1;
     key = "nankai" + y;
     nankai[y] = window.localStorage.getItem(key);
+    if(!nankai[y]){
+      nankai[y] = "yet";
+    }
     if(y = 27){
       z = 3;
       y = 0;
