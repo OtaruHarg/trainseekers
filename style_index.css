@@ -8,6 +8,14 @@ body{
     justify-content: center;
 }
 
+h1{
+    text-aligin: center;
+}
+
+h2{
+    text-aligin: center;
+}
+
 .card{
     background-color: grey;
     opacity: 0.8;
