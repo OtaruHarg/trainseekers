@@ -22,6 +22,7 @@ function passcheck(){
 }
 
 function press_S(){
+    document.querySelector("#moji").textContent = "パスワード認証";
     true_pass = true_pass + 1;
     window.location.href = "main.html";
     /*
