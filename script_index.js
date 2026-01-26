@@ -12,24 +12,16 @@ function press(x){
 }
 
 function passcheck(){
-    if(pass == 555){
-        document.querySelector("#moji").textContent = "Standing by...";
-        pass = 0;
-    }else if(pass == 0){
-        document.querySelector("#moji").textContent = "5桁のパスワードを入力してください";
-        pass = 0;
-    }else{
-        if(pass < 10){
-            document.querySelector("#passes").textContent = "●";
-        }else if(pass < 100){
-            document.querySelector("#passes").textContent = "●●";
-        }else if(pass < 1000){
-            document.querySelector("#passes").textContent = "●●●";
-        }else if(pass < 10000){
-            document.querySelector("#passes").textContent = "●●●●";
-        }else if(pass < 100000){
-            document.querySelector("#passes").textContent = "●●●●●";
-        }
+    if(pass < 10){
+        document.querySelector("#passes").textContent = "●";
+    }else if(pass < 100){
+        document.querySelector("#passes").textContent = "●●";
+    }else if(pass < 1000){
+        document.querySelector("#passes").textContent = "●●●";
+    }else if(pass < 10000){
+        document.querySelector("#passes").textContent = "●●●●";
+    }else if(pass < 100000){
+        document.querySelector("#passes").textContent = "●●●●●";
     }
 }
 
