@@ -11,6 +11,8 @@ var nankai_shurui = ["null","50000系「ラピート」","12000系「サザン�
              ,"12000系","9300系","7020系","7000系","5000系","3000系","ラッピング車両"];
 
 
+window.onload = load();
+
 function N(x){
   if(nankai[x] == "yet"){
     result = window.confirm(nankai_shurui[x] + "を発見しましたか？");
@@ -29,6 +31,7 @@ function save(){
     y = y + 1;
     key = "kintetsu" + y;
     val = kintetsu[y];
+    window.localStorage.setItem(key,val);
     if(y = 27){
       z = 1;
       y = 0;
@@ -38,6 +41,7 @@ function save(){
     y = y + 1;
     key = "meitetsu" + y;
     val = meitetsu[y];
+    window.localStorage.setItem(key,val);
     if(y = 27){
       z = 2;
       y = 0;
@@ -47,39 +51,41 @@ function save(){
     y = y + 1;
     key = "nankai" + y;
     val = nankai[y];
+    window.localStorage.setItem(key,val);
     if(y = 27){
       z = 3;
-      y = 0;
-    }
-  }
-  while(z = 3){
-    y = y + 1;
-    key = "kintetsu_shurui" + y;
-    val = kintetsu_shurui[y];
-    if(y = 27){
-      z = 4;
-      y = 0;
-    }
-  }
-  while(z = 4){
-    y = y + 1;
-    key = "meitetsu_shurui" + y;
-    val = meitetsu_shurui[y];
-    if(y = 27){
-      z = 5;
-      y = 0;
-    }
-  }
-  while(z = 5){
-    y = y + 1;
-    key = "nankai_shurui" + y;
-    val = nankai_shurui[y];
-    if(y = 27){
-      z = 6;
       y = 0;
     }
   }
 }
 
 function load(){
+  y = 0;
+  while(z = 0){
+    y = y + 1;
+    key = "kintetsu" + y;
+    kintetsu[y] = window.localStorage.getItem(key);
+    if(y = 27){
+      z = 1;
+      y = 0;
+    }
+  }
+  while(z = 1){
+    y = y + 1;
+    key = "meitetsu" + y;
+    meitetsu[y] = window.localStorage.getItem(key);
+    if(y = 27){
+      z = 2;
+      y = 0;
+    }
+  }
+  while(z = 2){
+    y = y + 1;
+    key = "nankai" + y;
+    nankai[y] = window.localStorage.getItem(key);
+    if(y = 27){
+      z = 3;
+      y = 0;
+    }
+  }
 }
