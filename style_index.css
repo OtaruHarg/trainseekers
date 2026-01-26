@@ -20,7 +20,7 @@ h2{
     background-color: grey;
     opacity: 0.8;
     width: 30vw;
-    height: 20vh;
+    height: 30vw;
     margin: 1.5vw;
     font-size: 30vw;
     text-aligin: center;
@@ -28,11 +28,11 @@ h2{
 }
 
 .part{
-    background-color: #FFFFFF;
-    color: #FFFFFF;
+    background-color: darkgrey;
+    color: darkgrey;
     opacity: 0.8;
     width: 30vw;
-    height: 20vh;
+    height: 30vw;
     margin: 1.5vw;
     font-size: 30vw;
     text-aligin: center;
