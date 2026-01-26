@@ -23,9 +23,12 @@ function passcheck(){
 
 function press_S(){
     true_pass = true_pass + 1;
+    window.location.href = "main.html";
+    /*
     if(true_pass > 5){
         window.location.href = "main.html";
     }
+    */
 }
 
 function press_E(){
