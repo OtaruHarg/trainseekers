@@ -1,4 +1,4 @@
-var result;
+var result,key,val;
 var kintetsu = ["null","yet"];
 var meitetsu = ["null","yet"];
 var nankai = ["null","yet","yet","yet","yet","yet","yet","yet","yet","yet","yet"
@@ -87,5 +87,9 @@ function load(){
       z = 3;
       y = 0;
     }
+  }
+
+  function clears(){
+    window.localStorage.clear();
   }
 }
