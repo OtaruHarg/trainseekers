@@ -11,8 +11,8 @@ body{
 .card{
     background-color: grey;
     opacity: 0.8;
-    width: 30vw;
-    height: 20vh;
+    width: 45vw;
+    height: 20vw;
     margin: 1.5vw;
     font-size: 30vw;
 }
