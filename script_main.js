@@ -37,6 +37,32 @@ function N(x){
   save();
 }
 
+function K(x){
+  if(kintetsu[x] == "yet"){
+    result = window.confirm(kintetsu_shurui[x] + "を発見しましたか？");
+    if(result){
+      kintetsu[x] = "check";
+      save();
+    }else{
+      alert("キャンセルしました");
+    }
+  }
+  save();
+}
+
+function M(x){
+  if(meitetsu[x] == "yet"){
+    result = window.confirm(meitetsu_shurui[x] + "を発見しましたか？");
+    if(result){
+      meitetsu[x] = "check";
+      save();
+    }else{
+      alert("キャンセルしました");
+    }
+  }
+  save();
+}
+
 function save(){
   y = 0;
   while(z == 0){
@@ -69,6 +95,7 @@ function save(){
       y = 0;
     }
   }
+  load();
 }
 
 function load(){
@@ -109,11 +136,11 @@ function load(){
       y = 0;
     }
   }
+}
 
-  function clears(){
-    result = window.confirm("データを削除しますか？");
-    if(result){
-      window.localStorage.clear();
-    }
+function clears(){
+  result = window.confirm("データを削除しますか？");
+  if(result){
+    window.localStorage.clear();
   }
 }
