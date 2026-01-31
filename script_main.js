@@ -105,7 +105,7 @@ function load(){
   while(z == 0){
     y = y + 1;
     key = "kintetsu" + y;
-    kintetsu[y] = window.localStorage.getItem(key);
+    kintetsu[y] = localStorage.getItem(key);
     if(!kintetsu[y]){
       kintetsu[y] = "yet";
     }
@@ -117,7 +117,7 @@ function load(){
   while(z == 1){
     y = y + 1;
     key = "meitetsu" + y;
-    meitetsu[y] = window.localStorage.getItem(key);
+    meitetsu[y] = localStorage.getItem(key);
     if(!meitetsu[y]){
       meitetsu[y] = "yet";
     }
