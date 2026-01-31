@@ -109,9 +109,6 @@ function load(){
     if(!kintetsu[y]){
       kintetsu[y] = "yet";
     }
-    if(kintetsu[y]=="check"){
-      document.getElementById("#").src = "fin.png";
-    }
     if(y == 44){
       z = 1;
       y = 0;
