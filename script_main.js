@@ -49,7 +49,6 @@ function K(x){
       alert("キャンセルしました");
     }
   }
-  save();
 }
 
 function M(x){
@@ -62,7 +61,6 @@ function M(x){
       alert("キャンセルしました");
     }
   }
-  save();
 }
 
 function save(){
@@ -106,9 +104,11 @@ function load(){
     y = y + 1;
     key = "kintetsu" + y;
     kintetsu[y] = localStorage.getItem(key);
+    /*
     if(!kintetsu[y]){
       kintetsu[y] = "yet";
     }
+    */
     if(y == 44){
       z = 1;
       y = 0;
