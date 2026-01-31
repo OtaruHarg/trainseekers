@@ -111,6 +111,7 @@ function load(){
     if(!kintetsu[y]){
       kintetsu[y] = "yet";
     }
+    check_K(y);
     if(y == 44){
       z = 1;
       y = 0;
@@ -147,5 +148,17 @@ function clears(){
   if(result){
     window.localStorage.clear();
     load();
+  }
+}
+
+
+function check_K(x){
+  if(kintetsu[x] == "check"){
+    if(x < 10){
+      key = "K_0" + x;
+    }else{
+      key = "K_" + x;
+    }
+    document.getElementById(key).src = "fin.PNG";
   }
 }
