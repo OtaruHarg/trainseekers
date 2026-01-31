@@ -104,7 +104,7 @@ function load(){
   z = 0;
   console.log("ロード開始");
   while(z == 0){
-    y=y+1;
+    y = y + 1;
     console.log("近鉄"+y+"番目");
     key = "kintetsu" + y;
     kintetsu[y] = localStorage.getItem(key);
