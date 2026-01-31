@@ -124,6 +124,7 @@ function load(){
     if(!meitetsu[y]){
       meitetsu[y] = "yet";
     }
+    check_M(y);
     if(y == 15){
       z = 2;
       y = 0;
@@ -136,6 +137,7 @@ function load(){
     if(!nankai[y]){
       nankai[y] = "yet";
     }
+    check_N(y);
     if(y == 27){
       z = 3;
       y = 0;
@@ -158,6 +160,28 @@ function check_K(x){
       key = "K_0" + x;
     }else{
       key = "K_" + x;
+    }
+    document.getElementById(key).src = "fin.PNG";
+  }
+}
+
+function check_M(x){
+  if(meitetsu[x] == "check"){
+    if(x < 10){
+      key = "M_0" + x;
+    }else{
+      key = "M_" + x;
+    }
+    document.getElementById(key).src = "fin.PNG";
+  }
+}
+
+function check_N(x){
+  if(nankai[x] == "check"){
+    if(x < 10){
+      key = "N_0" + x;
+    }else{
+      key = "N_" + x;
     }
     document.getElementById(key).src = "fin.PNG";
   }
