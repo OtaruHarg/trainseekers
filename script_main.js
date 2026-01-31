@@ -65,6 +65,7 @@ function M(x){
 
 function save(){
   y = 0;
+  z = 0;
   while(z == 0){
     y = y + 1;
     key = "kintetsu" + y;
@@ -100,17 +101,16 @@ function save(){
 
 function load(){
   y = 0;
+  z = 0;
   console.log("ロード開始");
   while(z == 0){
     y=y+1;
     console.log("近鉄"+y+"番目");
     key = "kintetsu" + y;
     kintetsu[y] = localStorage.getItem(key);
-    /*
     if(!kintetsu[y]){
       kintetsu[y] = "yet";
     }
-    */
     if(y == 44){
       z = 1;
       y = 0;
