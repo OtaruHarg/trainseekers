@@ -146,5 +146,6 @@ function clears(){
   result = window.confirm("データを削除しますか？");
   if(result){
     window.localStorage.clear();
+    load();
   }
 }
