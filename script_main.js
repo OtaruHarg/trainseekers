@@ -1,7 +1,7 @@
 var result,key,val;
-var x = 0;
-var y = 0;
-var z = 0;
+var x = 0;//42
+var y = 0;//15
+var z = 0;//24
 var kintetsu = ["null","yet","yet","yet","yet","yet","yet","yet","yet","yet","yet"
              ,"yet","yet","yet","yet","yet","yet","yet","yet","yet","yet"
              ,"yet","yet","yet","yet","yet","yet","yet"];
